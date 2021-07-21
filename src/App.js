@@ -233,9 +233,9 @@ class App extends Component {
     Navigation.setTopLevelNavigator(navigatorRef);
 
   render = () => (
-    <ErrorBoundary>
-      <MainThemeProvider>
-        <RainbowContextWrapper>
+    <MainThemeProvider>
+      <RainbowContextWrapper>
+        <ErrorBoundary>
           <Portal>
             <SafeAreaProvider>
               <Provider store={store}>
@@ -253,9 +253,9 @@ class App extends Component {
               </Provider>
             </SafeAreaProvider>
           </Portal>
-        </RainbowContextWrapper>
-      </MainThemeProvider>
-    </ErrorBoundary>
+        </ErrorBoundary>
+      </RainbowContextWrapper>
+    </MainThemeProvider>
   );
 }
 
