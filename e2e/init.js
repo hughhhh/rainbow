@@ -4,7 +4,7 @@
 require('dotenv').config({ path: '.env' });
 
 beforeAll(async () => {
-  await device.launchApp();
+  await device.launchApp({ newInstance: true });
 
   await device.setURLBlacklist([
     // eslint-disable-next-line prettier/prettier
